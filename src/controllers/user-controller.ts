@@ -9,6 +9,16 @@ class UserController {
     response.json(users);
   }
 
+  async getUserById(request: Request, response: Response) {
+    const { userId } = request.params;
+    const data = await fetch(
+      `http://jsonplaceholder.typicode.com/users/${userId}`
+    );
+    const user = await data.json();
+
+    response.json(user);
+  }
+
   async getPostsByUser(request: Request, response: Response) {
     const { userId } = request.params;
     const data = await fetch(

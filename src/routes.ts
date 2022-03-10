@@ -6,5 +6,6 @@ const userController = new UserController();
 
 routes.get('/users', userController.index);
 routes.get('/users/:userId/posts', userController.getPostsByUser);
+routes.get('/users/:userId', userController.getUserById);
 
 export default routes;
