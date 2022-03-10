@@ -30,3 +30,16 @@
 |              |           |         |              |                                                |
   
 </div>
+
+<h3 align="center"> Routes</h3>
+<p align="center">Lista das endpoints disponíveis na api</p>
+
+<div align="center">
+
+| **Route**        | **resource**       |
+|------------------|---------------------|
+| /users           | Listar usuários     |
+| /users/:id       | Detalhes do usuário |
+| /users/:id/posts | Posts do usuário    |
+
+</div>
