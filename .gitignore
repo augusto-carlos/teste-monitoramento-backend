@@ -1,0 +1,8 @@
+node_modules
+build
+coverage
+data
+!src/data
+!tests/data
+.vscode
+.env
